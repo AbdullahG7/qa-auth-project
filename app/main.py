@@ -8,7 +8,7 @@ app = FastAPI(title="Auth API")
 users = {}      # username -> {"salt": bytes, "hash": str}
 tokens = {}     # token -> username
 failed = {}     # username -> failed login count
-MAX_FAILS = 5
+MAX_FAILS = 6
 
 
 class RegisterIn(BaseModel):
